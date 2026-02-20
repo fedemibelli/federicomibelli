@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <head>
+        <style type="text/css">
+            :root{
+                --cagliariblue: #1A7595;
+                --cagliarired: #FB2C36;
+                --textcolor: rgb(43, 62, 62);
+            }
+
+            body{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: linear-gradient(var(--cagliariblue), var(--cagliarired));
+                min-height: 100vh;
+            }
+
+            h2{
+                text-align: center;
+                color: var(--textcolor);
+            }
+
+            #registrationForm{
+                width: 300px;
+                margin: 50px auto;
+                padding: 20px;
+                border-radius: 10px;
+                border: 1px solid black;
+                background: white;
+            }
+
+
+            label, input, select{
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            button{
+                padding: 8px;
+                background-color: var(--cagliariblue);
+                cursor: pointer;
+                border-radius: 4px;
+                color: white;
+                border: none;
+                width: 100%;
+            }
+
+            button:hover{
+                background-color: var(--cagliarired);
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        </style>
+    </head>
+
+    <body> 
+
+        <div class="container">
+            <form id="registrationForm">
+                <h2>Cagliari Registration Form</h2>
+
+                <label>First Name:</label>
+                <input type="text" required>
+
+                <label>Email:</label>
+                <input type="text" required>
+
+                <label>Phone Number:</label>
+                <input type="text" required>
+
+                <label>Date of Birth:</label>
+                <input type="date">
+
+                <label>Test's city:</label>
+                <select>
+                    <option>Cagliari</option>
+                    <option>Milan</option>
+                    <option>Rome</option>
+                    <option>Turin</option>
+                    <option>Naples</option>
+                    <option>Other</option>
+                    <option>Foreign City</option>
+                </select>
+
+                <label>Test Type:</label>
+                <select>
+                    <option>Easy</option>
+                    <option>Medium</option>
+                    <option>Hard</option>
+                    <option>Expert</option>
+                </select>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </body>
+</html>
