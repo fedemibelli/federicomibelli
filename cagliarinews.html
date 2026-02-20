@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<head>
+    <title> Cagliari News </title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .dashboard{
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+        .header{
+            display: flex;
+            grid-area: header;
+            background-color: grey;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 20px;
+            transition: transform 0.3s;
+        }
+        .header a {
+            color: white;
+            text-decoration: none !important;
+            transition: transform 0.3s;
+            display: inline-block; 
+        }
+
+        .header a:hover {
+            transform: scale(1.25);
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+        }
+        nav a{
+            color: white;
+            text-decoration: none !important;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkred;
+            text-align: center;
+        }
+
+        h2 {
+            color: darkslategray;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        ul {
+            background-color: white;
+            padding: 15px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: green;
+            color: white;
+        }
+
+        td, th {
+            padding: 8px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            padding: 60px;
+            border: 2px solid green;
+        }
+
+        .header{
+            display: flex;
+            grid-area: header;
+            background-color: grey;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 20px;
+            transition: transform 0.3s;
+        }
+        .header a {
+            color: white;
+            text-decoration: none !important;
+            transition: transform 0.3s;
+            display: inline-block; 
+        }
+
+        .header a:hover {
+            transform: scale(1.25);
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+        }
+        nav a{
+            color: white;
+            text-decoration: none !important;
+        }
+        .ppa{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <p> Cagliari </p>
+            <nav>
+                <a href="grrid.html"> Main Page </a>
+                <a href="stadium.html"> Stadium </a>
+                <a href="events.html"> Events </a>
+            </nav>
+            <a href="registrationformcagliari.html">User</a>
+        </header>
+
+        <h1> </h1>
+
+    <div class="ppa">
+    <div class="container">
+
+        <h2>Description</h2>
+        <p>
+            Cagliari lost to Roma on Monday, the score was 2-0, Donyell Malen scored 2 goals. <br>
+            Cagliari is 12th in Serie a with 28 points, 7 wins 7 draws and 10 losses. <br>
+            The best goalscorers are Sebastiano Esposito and Semih Kilicsoy with 4 goals each. <br>
+        </p>
+
+        <h2>Last 5 games</h2>
+        <table>
+            <tr>
+                <th>Games</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>Roma VS Cagliari </td>
+                <td>2-0</td>
+            </tr>
+            <tr>
+                <td>Cagliari VS Verona</td>
+                <td>4-0</td>
+            </tr>
+            <tr>
+                <td>Fiorentina VS Cagliari</td>
+                <td>1-2</td>
+            </tr>
+            <tr>
+                <td>Cagliari VS Juventus</td>
+                <td>1-0</td>
+            </tr>
+            <tr>
+                <td>Genoa VS Cagliari</td>
+                <td>3-0</td>
+            </tr>
+        </table>
+
+        <h2>Goalscorers in last 5 matches</h2>
+        <ul>
+            <li>Donyell Malen 25', Donyell Malen 65'.</li>
+            <li>Luca Mazzitelli 36', Semih Kilicsoy 45+2', Ibrahima Sulemana 84', Riyad Idrissi 90+1'.</li>
+            <li>Semih Kilicsoy 31', Marco Palestra 47', Marco Brescianini 74'.</li>
+            <li>Luca Mazzitelli 65'.</li>
+            <li>Lorenzo Colombo 7', Morten Frendrup 75', Leo Ostigard 78'</li>
+        </ul>
+
+        <img src="kilicsoy.png">
+
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
