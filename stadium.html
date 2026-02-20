@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cagliari Stadium </title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .dashboard{
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkred;
+            text-align: center;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        ul {
+            background-color: white;
+            padding: 15px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: darkred;
+            color: white;
+        }
+
+        td, th {
+            padding: 8px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            padding: 60px;
+            border: 2px solid darkred;
+        }
+
+        .header{
+            display: flex;
+            grid-area: header;
+            background-color: grey;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 20px;
+            transition: transform 0.3s;
+        }
+        .header a {
+            color: white;
+            text-decoration: none !important;
+            transition: transform 0.3s;
+            display: inline-block; 
+        }
+
+        .header a:hover {
+            transform: scale(1.25);
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+        }
+        nav a{
+            color: white;
+            text-decoration: none !important;
+        }
+        .ppa{
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard">
+        <header class="header">
+        <p> Cagliari </p>
+        <nav>
+            <a href="grrid.html"> Main Page </a>
+            <a href="cagliarinews.html"> News </a>
+            <a href="events.html"> Events </a>
+        </nav>
+        <a href="registrationformcagliari.html">User</a>
+    </header>
+
+    <h1></h1>
+    <div class="ppa">
+    <div class="container">
+
+        <h2>Description</h2>
+        <p>
+            The Unipol Domus is the home stadium of Cagliari Calcio. <br>
+            It is located in Cagliari, Sardinia, Italy. <br>
+            The stadium was opened in 2017. <br>
+        </p>
+
+        <h2>Main Information</h2>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Unipol Domus</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>Cagliari</td>
+            </tr>
+            <tr>
+                <td>Capacity</td>
+                <td>16k seats</td>
+            </tr>
+            <tr>
+                <td>Opened in</td>
+                <td>2017</td>
+            </tr>
+        </table>
+
+        <h2>Interesting Facts</h2>
+        <ul>
+            <li>It is the temporary stadium of Cagliari Calcio.</li>
+            <li>It was built near the old Sant'Elia Stadium.</li>
+            <li>It hosts Serie A matches.</li>
+            <li>It has a modern and compact structure.</li>
+        </ul>
+
+        <img src="domus.png"> 
+
+    </div>
+    </div>
+    </div>
+</body>
+</html>
