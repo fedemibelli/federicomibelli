@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<header>
+    <title> Cagliari Football Club </title>
+    <style type="text/css"> 
+        :root{
+            --cagliariblue: #1A7595;
+            --cagliarired: #FB2C36;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .dashboard{
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+        .header{
+            display: flex;
+            grid-area: header;
+            background-color: grey;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 20px;
+            transition: transform 0.3s;
+        }
+        .header a {
+            color: white;
+            text-decoration: none !important;
+            transition: transform 0.3s;
+            display: inline-block; 
+        }
+
+        .header a:hover {
+            transform: scale(1.25);
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+        }
+        nav a{
+            color: white;
+            text-decoration: none !important;
+        }
+        .sidebar{
+            display: flex;
+            grid-area: sidebar;
+            background-color: var(--cagliariblue);
+            color: white;
+            padding: 50px 8px;
+            gap: 35px;
+            flex-direction: column;
+        }
+        .sidebar a{
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            transition: transform 0.3s ease-in-out;
+        }
+        .sidebar a:hover{
+            transform: scale(1.05);
+        }
+        .footer{
+            display: flex;
+            grid-area: footer;
+            background-color: grey;
+            color: white;
+            padding: 20px 40px;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .card-row{
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            background-color: white;
+            color: black;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .card{
+            display: flex;
+            background-color: var(--cagliariblue);
+            color: white;
+            text-align: center;
+            justify-content: space-around;
+            border-radius: 15px;
+            height: 100%;
+            padding: 20px 50px;
+            flex-direction: column;
+        }
+        .buttoncard{
+            padding: 7px;
+        }
+        .buttoncard button{
+            background-color: grey;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transform: 2.5s ease-in-out;
+            
+        }
+        .buttoncard button:hover{
+            transform: scale(1.15);
+            background-color: white;
+            color: black;
+        }
+
+        .card img{
+            width: 140px;
+        }
+        .text{
+            padding: 20px;
+            color: var(--cagliariblue); 
+        }
+        .text h2{
+            color: black;
+            font-size: 25px;
+        }
+        .text h5{
+            color: var(--cagliariblue);
+            font-size: 15px;
+
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--cagliarired);
+            color: white;
+            border: 1px solid black;
+        }
+
+        caption {
+            caption-side: top;
+            text-align: left;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: cadetblue;
+        }
+
+        tr, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            color: white;
+        }
+        .tablee{
+            padding: 100px;
+        }
+    </style>
+<body>
+    <div class="dashboard"> 
+    <header class="header">
+        <p> Cagliari </p>
+        <nav>
+            <a href="https://cagliaricalcio.com/"> Home </a>
+            <a href="https://cagliaricalcio.com/news/serie-a-2025-26-il-calendario-del-cagliari/"> Calendary </a>
+            <a href="https://cagliaricalcio.com/en/casteddu/rossoblu-history/"> History </a>
+        </nav>
+        <a href="registrationformcagliari.html">User</a>
+    </header>
+    <aside class="sidebar"> 
+        <a href="stadium.html"> Stadium </a>
+        <a href="https://cagliaricalcio.com/notizie/"> News </a>
+        <a href="https://cagliaricalcio.com/news_cat/highlights/"> Events </a>
+    </aside>
+    <main>
+        <div class="text"> <h2> Cagliari Calcio </h2>
+        <h5> Cagliari Calcio is a football team born in Cagliari in the island of Sardinia in Italy, they were born in 1920, 
+        they played most of their time in Serie A, the biggest Italian football league, they won 1 time Serie A in 1970, 
+        now they are in Serie A. </h5> </div>
+
+        <section class="card-row">
+            <div class="card"> 
+                <img src="caprile.png" alt="a">
+                <h2> E. Caprile </h2>
+                <div class="buttoncard">
+                    <button> Learn more </button>
+                </div>
+            </div>
+
+            <div class="card"> 
+                <img src="zappa.png" alt="a">
+                <h2> G. Zappa </h2>
+                <div class="buttoncard">
+                    <button> Learn more </button>
+                </div>
+            </div>
+
+            <div class="card"> 
+                <img src="luperto1.png" alt="a">
+                <h2> S. Luperto </h2>
+                <div class="buttoncard">
+                    <button> Learn more </button>
+                </div>
+            </div>
+            
+            <div class="card"> 
+                <img src="rodriguez.png" alt="a">
+                <h2> J. Rodriguez </h2>
+                <div class="buttoncard">
+                    <button> Learn more </button>
+                </div>
+            </div>
+                        
+            <div class="card"> 
+                <img src="palestra.png" alt="a">
+                <h2> M. Palestra </h2>
+                <div class="buttoncard"> 
+                    <button> Learn more </button>
+                </div>
+            </div>
+                        
+            <div class="card"> 
+                <img src="prati1.png" alt="a">
+                <h2> M. Prati </h2>
+                <div class="buttoncard">
+                    <button> Learn more </button>
+                </div>
+            </div>
+                        
+            <div class="card"> 
+                <img src="adopo.png" alt="a">
+                <h2> M. Adopo </h2>
+                <div class="buttoncard">
+                    <button> Learn more </button>
+                </div>
+            </div>
+                        
+            <div class="card"> 
+                <img src="gaetano1.png" alt="a">
+                <h2> G. Gaetano </h2>
+                <div class="buttoncard">
+                    <button> Learn more </button>
+                </div>
+            </div>
+                        
+            <div class="card"> 
+                <img src="felici1.png" alt="a">
+                <h2> M. Felici </h2>
+                <div class="buttoncard">
+                    <button> Learn more </button>
+                </div>
+            </div>
+                        
+            <div class="card"> 
+                <img src="borelli1.png" alt="a">
+                <h2> S. Borelli </h2>
+                <div class="buttoncard">
+                    <button> Learn more </button>
+                </div>
+            </div>
+                        
+            <div class="card"> 
+                <img src="esposito1.png" alt="a">
+                <h2> S. Esposito </h2>
+                <div class="buttoncard">
+                    <button> Learn more </button>
+                </div>
+            </div>
+
+        </section>
+        <div class="tablee">
+        <table>
+            <caption> Cagliari Players Values </caption>
+            <thead>
+                <tr>
+                    <td> Player </td>
+                    <td> Position </td>
+                    <td> Year of Birth </td>
+                    <td> Value </td>
+                </tr>
+            </thead>
+
+                <tr>
+                    <td> Elia Caprile </td>
+                    <td> Goalkeeper </td>
+                    <td> 2001 </td>
+                    <td> 15mln </td>
+                </tr>
+
+                <tr>
+                    <td> Alan Sherri </td>
+                    <td> Goalkeeper </td>
+                    <td> 1997 </td>
+                    <td> 1mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Giuseppe Ciocci </td>
+                    <td> Goalkeeper </td>
+                    <td> 2002 </td>
+                    <td> 100k </td>
+                </tr>
+
+                <tr> 
+                    <td> Alberto Dossena </td>
+                    <td> Center Back </td>
+                    <td> 1998 </td>
+                    <td> 7mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Juan Rodriguez </td>
+                    <td> Center Back </td>
+                    <td> 2005 </td>
+                    <td> 5mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Adam Obert </td>
+                    <td> Center Back </td>
+                    <td> 2002 </td>
+                    <td> 4mln</td>
+                </tr>
+
+                <tr> 
+                    <td> Yerry Mina </td>
+                    <td> Center Back </td>
+                    <td> 1994 </td>
+                    <td> 3mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Ze Pedro </td>
+                    <td> Center Back </td>
+                    <td> 1997 </td>
+                    <td> 2,5mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Riyad Idrissi </td>
+                    <td> Left Back </td>
+                    <td> 2005 </td>
+                    <td> 2,5mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Marco Palestra </td>
+                    <td> Right Back </td>
+                    <td> 2005 </td>
+                    <td> 25mln </td>
+                </tr>
+                <tr> 
+                    <td> Gabriele Zappa </td>
+                    <td> Right Back </td>
+                    <td> 1999 </td>
+                    <td> 4mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Othniel Raterink </td>
+                    <td> Right Back </td>
+                    <td> 2006 </td>
+                    <td> 450k </td>
+                </tr>
+
+                <tr> 
+                    <td> Ibrahim Sulemana </td>
+                    <td> Defensive Midfielder</td>
+                    <td> 2003 </td>
+                    <td> 6mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Michel Adopo </td>
+                    <td> Central Midfielder </td>
+                    <td> 2000 </td>
+                    <td> 6mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Micheal Folorunsho </td>
+                    <td> Central Midfielder </td>
+                    <td> 1998 </td>
+                    <td> 6mln </td>
+                </tr>
+                <tr> 
+                    <td> Joseph Liteta </td>
+                    <td> Central Midfielder </td>
+                    <td> 2006 </td>
+                    <td> 2mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Alessandro Deiola </td>
+                    <td> Central Midfielder </td>
+                    <td> 1995 </td>
+                    <td> 1,60mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Luca Mazzitelli </td>
+                    <td> Central Midfielder </td>
+                    <td> 1995 </td>
+                    <td> 1,40mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Gianluca Gaetano </td>
+                    <td> Offensive Midfielder </td>
+                    <td> 2000 </td>
+                    <td> 4mln </td>
+                </tr>
+
+                <tr> 
+                    <td> Mattia Felici </td>
+                    <td> Left Winger </td>
+                    <td> 2001 </td>
+                    <td> 2,8mln </td>
+                </tr>
+
+                <tr>
+                    <td> Agustin Albarracin </td>
+                    <td> Left Winger </td>
+                    <td> 2005 </td>
+                    <td> 1,8mln </td>
+                </tr>
+
+                <tr>
+                    <td> Sebastiano Esposito </td>
+                    <td> Right Winger </td>
+                    <td> 2002 </td>
+                    <td> 9mln </td>
+                </tr>
+
+                <tr>
+                    <td> Semih Kilicsoy </td>
+                    <td> Striker </td>
+                    <td> 2005 </td>
+                    <td> 10mln </td>
+                </tr>
+
+                <tr>
+                    <td> Gennaro Borrelli </td>
+                    <td> Striker </td>
+                    <td> 2000 </td>
+                    <td> 3mln </td>
+                </tr>
+
+                <tr>
+                    <td> Andrea Belotti </td>
+                    <td> Striker </td>
+                    <td> 1993 </td>
+                    <td> 1,5mln </td>
+                </tr>
+
+                <tr>
+                    <td> Yael Trepy </td>
+                    <td> Striker </td>
+                    <td> 2006 </td>
+                    <td> 1,5mln </td>
+                </tr>
+
+                <tr>
+                    <td> Leonardo Pavoletti </td>
+                    <td> Striker </td>
+                    <td> 1988 </td>
+                    <td> 700k </td>
+                </tr>
+
+        </table>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <p> Cagliari Calcio, Cagliari, Italy, 23/01/2026 </p>
+    </footer>
+    </div>
+</body>
+</html>
