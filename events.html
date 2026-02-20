@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cagliari Events </title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .dashboard{
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkred;
+            text-align: center;
+        }
+
+        h2 {
+            color: dimgray;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        ul {
+            background-color: white;
+            padding: 15px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: lightskyblue;
+            color: white;
+        }
+
+        td, th {
+            padding: 8px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            padding: 60px;
+            border: 2px solid lightskyblue;
+        }
+
+        .header{
+            display: flex;
+            grid-area: header;
+            background-color: grey;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 20px;
+            transition: transform 0.3s;
+        }
+        .header a {
+            color: white;
+            text-decoration: none !important;
+            transition: transform 0.3s;
+            display: inline-block; 
+        }
+
+        .header a:hover {
+            transform: scale(1.25);
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+        }
+        nav a{
+            color: white;
+            text-decoration: none !important;
+        }
+        .ppa{
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard">
+        <header class="header">
+        <p> Cagliari </p>
+        <nav>
+            <a href="grrid.html"> Main Page </a>
+            <a href="cagliarinews.html"> News </a>
+            <a href="stadium.html"> Stadium </a>
+        </nav>
+        <a href="registrationformcagliari.html">User</a>
+    </header>
+
+    <h1></h1>
+    <div class="ppa">
+    <div class="container">
+
+        <h2>Description</h2>
+        <p>
+            In Parma VS Cagliari there will be tickets on sale without restrictions. <br>
+            Cagliari Club announced the project of the new stadium. <br>
+            Micheal Folorunsho is coming back <br>
+        </p>
+
+        <h2>New events</h2>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <td>New coach</td>
+                <td>Fabio Pisacane</td>
+            </tr>
+            <tr>
+                <td>Who got injured</td>
+                <td>Gianluca Gaetano</td>
+            </tr>
+            <tr>
+                <td>For how long</td>
+                <td>3 weeks</td>
+            </tr>
+            <tr>
+                <td>Age of the coach</td>
+                <td>40 years</td>
+            </tr>
+        </table>
+
+        <h2>Interesting Facts</h2>
+        <ul>
+            <li>Micheal Folorunsho is coming back by the injury.</li>
+            <li>Cagliari lost by 2-0 against Lecce. </li>
+            <li>Fabio Pisacane before becoming a coach he retired in Cagliari.</li>
+            <li>Cagliari Club has announced the project of the new stadium. </li>
+        </ul>
+
+        <img src="pisacane.png">
+    </div>
+    </div>
+    </div>
+</body>
+</html>
